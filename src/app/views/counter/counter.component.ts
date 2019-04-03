@@ -14,7 +14,10 @@ export class CounterComponent {
     this.counter = 0;
   }
 
-  decreaseCounter() {}
+  decreaseCounter() {
+    this.counter--;
+    this.counterChange.emit();
+  }
 
   increaseCounter() {
     this.counter++;
