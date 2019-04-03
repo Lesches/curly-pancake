@@ -11,6 +11,7 @@ import { HomeComponent } from './views/home/home.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { CounterComponent } from './views/counter/counter.component';
 import { StarsPipe } from './controllers/stars.pipe';
+import { RandomComponent } from './views/random/random.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StarsPipe } from './controllers/stars.pipe';
     HomeComponent,
     NotFoundComponent,
     CounterComponent,
-    StarsPipe
+    StarsPipe,
+    RandomComponent
   ],
   imports: [
     BrowserModule,
