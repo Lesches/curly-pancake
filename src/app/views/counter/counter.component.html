@@ -1,6 +1,9 @@
 <div fxLayout="column" fxLayoutAlign="center space-between" fxLayoutGap="2%">
-  <p>The count is now {{counter}} {{counter | stars: {unit: '*'} }}</p>
+  <!--Inserting the pipe to display the stars-->
+  <p>The count is now {{counter}} {{output | stars: {unit: ''} }}</p>
   <div fxLayout="row" fxLayoutAlign="start space-between" fxLayoutGap="2%">
+
+    <!--The 2 counter buttons, to increase and decrease-->
     <button mat-flat-button color="primary" (click)="increaseCounter()">increase</button>
     <button mat-flat-button color="accent" (click)="decreaseCounter()">decrease</button>
   </div>

@@ -5,6 +5,7 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
 import { CounterComponent } from './views/counter/counter.component';
 import {RandomComponent} from './views/random/random.component';
 
+// Added the random link
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'counter', component: CounterComponent},

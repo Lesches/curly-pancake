@@ -8,6 +8,7 @@ import {JokeService} from '../../joke.service';
   styleUrls: ['./random.component.scss']
 })
 export class RandomComponent implements OnInit {
+  // initiationg the URL to the joke API
   jokeUrl: string;
 
   constructor(private jokeFetcher: JokeService, private route: ActivatedRoute) { }

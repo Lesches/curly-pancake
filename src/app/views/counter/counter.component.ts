@@ -12,13 +12,15 @@ export class CounterComponent {
 
   constructor() {
     this.counter = 0;
+    this.output = '*';
   }
-
+// Decrements the counter by 1
   decreaseCounter() {
     this.counter--;
     this.counterChange.emit();
   }
 
+  // Increments the counter by 1
   increaseCounter() {
     this.counter++;
     this.counterChange.emit();
